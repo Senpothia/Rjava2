@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.test</groupId>
+	<artifactId>Weibull</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<repositories>
+		<repository>
+			<id>bedatadriven</id>
+			<name>bedatadriven public repo</name>
+			<url>https://nexus.bedatadriven.com/content/groups/public/</url>
+		</repository>
+
+	</repositories>
+	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/ca.umontreal.iro/ssj -->
+		<dependency>
+			<groupId>ca.umontreal.iro</groupId>
+			<artifactId>ssj</artifactId>
+			<version>2.5</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.renjin.cran/rJava -->
+		<dependency>
+			<groupId>org.renjin.cran</groupId>
+			<artifactId>rJava</artifactId>
+			<version>0.9-8-b5</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/com.github.lucarosellini.rJava/JRI -->
+		<dependency>
+			<groupId>com.github.lucarosellini.rJava</groupId>
+			<artifactId>JRI</artifactId>
+			<version>0.9-7</version>
+		</dependency>
+
+
+	</dependencies>
+</project>
