@@ -13,8 +13,13 @@ public class RTest6 {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		Runtime.getRuntime().exec("Rscript kaplanMeier.r");
+		//Runtime.getRuntime().exec("Rscript kaplanMeier.r");
+		Regression regression = new Regression();
+		regression.start();
 		
+		new Thread(new Analyse()).start();
+		
+		/**
 		String uri = "reg.csv";
 		Path path = Paths.get(uri);
 		//List <String> lines = Files.readAllLines(path);
@@ -23,8 +28,7 @@ public class RTest6 {
 			System.out.println(lines.get(i));
 		}
 		
-		
-		
+	*/
 		
 		System.out.println("End");
 		}
