@@ -3,7 +3,7 @@
 x<-c(1,2,3,4,5,6,7,8,9,10)
 y<-c(14, 12, 17, 25, 28, 24, 24, 28, 32, 32)
 model<-lm(y~x)
-jpeg('rplot1.jpg')
+jpeg('reg.jpg')
 plot(x,y)
 abline(model)
 segments(x,fitted(model),x,y)

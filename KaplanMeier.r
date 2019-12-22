@@ -12,6 +12,6 @@ d<-data.frame(delay=z)
 
  s<-survfit(Surv(d$delay,d$status)~1)
 plot(s,main="survival function")
-jpeg('rplot.jpg')
+jpeg('kaplan.jpg')
 plot(s,main="survival function")
 dev.off()
