@@ -10,16 +10,23 @@ import org.rosuda.JRI.Rengine;
 
 public class RTest6 {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 
 		//Runtime.getRuntime().exec("Rscript kaplanMeier.r");
-		Regression regression = new Regression();
-		regression.start();
 		
-		new Thread(new Analyse()).start();
 		
-		/**
+		Temoin temoin = new Temoin();
+		Regression regression = new Regression(temoin);
+		//Analyse analyse = new Analyse(temoin);
+		
+		//new Thread(regression).start();
+		//new Thread(analyse).start();
+		Thread t1 = new Thread(regression);
+		t1.start();
+		//Thread t2 = new Thread(analyse);
+		
+		t1.join();
 		String uri = "reg.csv";
 		Path path = Paths.get(uri);
 		//List <String> lines = Files.readAllLines(path);
@@ -28,7 +35,7 @@ public class RTest6 {
 			System.out.println(lines.get(i));
 		}
 		
-	*/
+		 
 		
 		System.out.println("End");
 		}
