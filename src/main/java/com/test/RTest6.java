@@ -20,11 +20,13 @@ public class RTest6 {
 		//Regression regression = new Regression(temoin);
 		//Analyse analyse = new Analyse(temoin);
 		//Mle2 mle2 = new Mle2(temoin);
-		Mle5 mle5 = new Mle5(temoin);
+		//Mle5 mle5 = new Mle5(temoin);
+		Ggplo2t ggplot2 = new Ggplo2t(temoin);
 		//new Thread(regression).start();
 		//new Thread(analyse).start();
 		//Thread t1 = new Thread(regression);
-		Thread t1 = new Thread(mle5);
+		//Thread t1 = new Thread(mle5);
+		Thread t1 = new Thread(ggplot2);
 		t1.start();
 		//Thread t2 = new Thread(analyse);
 		
