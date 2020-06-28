@@ -21,7 +21,7 @@ public class RTest6 {
 		//Analyse analyse = new Analyse(temoin);
 		//Mle2 mle2 = new Mle2(temoin);
 		//Mle5 mle5 = new Mle5(temoin);
-		Ggplo2t ggplot2 = new Ggplo2t(temoin);
+		Ggplot2 ggplot2 = new Ggplot2(temoin);
 		//new Thread(regression).start();
 		//new Thread(analyse).start();
 		//Thread t1 = new Thread(regression);

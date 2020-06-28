@@ -2,11 +2,11 @@ package com.test;
 
 import java.io.IOException;
 
-public class Ggplo2t extends Thread {
+public class Ggplot2 extends Thread {
 	
 public Temoin temoin;
 	
-	public Ggplo2t (Temoin temoin)  {
+	public Ggplot2 (Temoin temoin)  {
 		
 		this.temoin = temoin;
 	}
