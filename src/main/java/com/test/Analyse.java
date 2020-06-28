@@ -15,6 +15,7 @@ public class Analyse extends Thread {
 
 	}
 
+	
 	public void run() {
 
 		synchronized (this.temoin) {
